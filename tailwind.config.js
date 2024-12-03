@@ -6,8 +6,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [daisyui],
-}
+    extend: {
+      colors: {
+        'primary-color': '#331A15'
+      }
+      ,
+      fontFamily: {
+        'rancho-regular': "Rancho, cursive"
 
+        
+      },
+    },
+    plugins: [daisyui],
+  }
+}

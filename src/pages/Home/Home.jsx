@@ -1,8 +1,12 @@
+import Hero from "../../components/Hero/Hero";
 
 const Home = () => {
       return (
             <div>
-                   hello world
+                  <Hero></Hero>
+                  <div>
+                        <p className=" text-center"> --- Sip & Savor ---</p>
+                  </div>
             </div>
       );
 };
