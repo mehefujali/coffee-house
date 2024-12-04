@@ -1,6 +1,6 @@
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import swal from "sweetalert";
 
 const AddCoffee = () => {
       const handleAddCoffee = (e) => {
@@ -34,7 +34,7 @@ const AddCoffee = () => {
                   .then(data => {
                         console.log(data);
                         if (data.insertedId){
-                              alert("coffee added")
+                              swal("Good job!", "Your coffee added!", "success");
                         }
             })
 
